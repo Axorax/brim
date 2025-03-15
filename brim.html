@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <h1>{title.upper()}</h1>
+    <p>{desc}</p>
+
+    <brim:pre>
+        print("Code before app runs.")
+    </brim:pre>
+
+    <brim:post>
+        print("Code after app runs.")
+    </brim:post>
+
+    <brim:optimize:image>true</brim:optimize:image>
+    <brim:optimize:font>true</brim:optimize:font>
+
+    <div>
+        <h2>Features:</h2>
+        {# for feature in features #}
+            <p>{feature}</p>
+        {# endfor #}
+    </div>
+
+</body>
+</html>
